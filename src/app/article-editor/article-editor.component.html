@@ -1,0 +1,15 @@
+<div class="articleEditor">
+    <div style="width: 100%;">
+        <button (click)="insertDemoText()">Tekst toevoegen</button>
+        <button (click)="toggleEditMode()" style="margin-left: 10px;">{{editModeText}}</button>
+    </div>
+    <div [hidden]="isEditing" style="width: 100%;" class="panelOne">
+        <div id="editorjs"></div>
+    </div>
+
+    <div [hidden]="!isEditing" class="panelTwo">
+        <div class="articleDataContainer">
+            <pre [innerHTML]="parsedData"></pre>
+        </div>
+    </div>
+</div>

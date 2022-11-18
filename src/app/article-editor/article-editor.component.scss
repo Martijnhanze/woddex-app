@@ -1,0 +1,37 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#editorjs {
+  background: white;
+  min-height: 700px;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border-radius: 6px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+::ng-deep .ce-block__content,
+::ng-deep .ce-toolbar__content {
+  max-width: unset;
+}
+
+.articleDataContainer {
+  background: white;
+  min-height: 700px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: keep-all
+}
